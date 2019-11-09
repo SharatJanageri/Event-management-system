@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0303)http://localhost/phpmyadmin/sql.php?db=event&table=volunteer&sql_query=SELECT+%2A+FROM+%60volunteer%60&zero_rows=The+row+has+been+deleted&goto=tbl_structure.php&token=b515f4e9d07645c02fe678cf2c543d4a&message=1+row%28s%29+deleted.+%28+Query+took+0.0269+sec+%29&phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://localhost/phpmyadmin/favicon.ico" type="image/x-icon">
+    <title>phpMyAdmin</title>
+    <link rel="stylesheet" type="text/css" href="./phpmyadmin.css(1).php">
+    <link rel="stylesheet" type="text/css" href="./print.css" media="print">
+    <meta name="robots" content="noindex,nofollow">
+<script type="text/javascript">
+try {
+    // can't access this if on a different domain
+    var topdomain = top.document.domain;
+    // double-check just for sure
+    if (topdomain != self.document.domain) {
+        alert("Redirecting...");
+        top.location.replace(self.document.URL.substring(0, self.document.URL.lastIndexOf("/")+1));
+    }
+}
+catch(e) {
+    alert("Redirecting... (error: " + e);
+    top.location.replace(self.document.URL.substring(0, self.document.URL.lastIndexOf("/")+1));
+}
+</script>
+<script src="./mootools.js.download" type="text/javascript"></script>
+<script src="./functions.js.download" type="text/javascript"></script>
+<script src="./functions.js.download" type="text/javascript"></script>
+<script src="./tooltip.js.download" type="text/javascript"></script>
+<script type="text/javascript">
+// <![CDATA[
+// Updates the title of the frameset if possible (ns4 does not allow this)
+if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+    && typeof(parent.document.title) == 'string') {
+    parent.document.title = 'localhost / localhost / event / volunteer | phpMyAdmin 3.1.3.1';
+}
+
+var PMA_messages = new Array();
+PMA_messages['strFormEmpty'] = 'Missing value in the form!';
+PMA_messages['strNotNumber'] = 'This is not a number!';
+PMA_messages['strNoDropDatabases'] = '';
+PMA_messages['strDoYouReally'] = 'Do you really want to ';
+PMA_messages['strDropDatabaseStrongWarning'] = 'You are about to DESTROY a complete database!';
+PMA_messages['strBLOBRepositoryDisableStrongWarning'] = 'You are about to DISABLE a BLOB Repository!';
+PMA_messages['strBLOBRepositoryDisableAreYouSure'] = 'Are you sure you want to disable all BLOB references for database event?';
+window.parent.addEvent(window, 'load', PMA_TT_init);
+// ]]>
+</script>
+    <meta name="OBGZip" content="true">
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="serverinfo">
+<a href="http://localhost/phpmyadmin/main.php?token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" class="item">        <img class="icon" src="./s_host.png" width="16" height="16" alt=""> 
+Server: localhost</a>
+        <span class="separator"><img class="icon" src="./item_ltr.png" width="5" height="9" alt="-"></span>
+<a href="http://localhost/phpmyadmin/db_structure.php?db=event&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" class="item">        <img class="icon" src="./s_db.png" width="16" height="16" alt=""> 
+Database: event</a>
+        <span class="separator"><img class="icon" src="./item_ltr.png" width="5" height="9" alt="-"></span>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" class="item">        <img class="icon" src="./s_tbl.png" width="16" height="16" alt=""> 
+Table: volunteer</a>
+</div><div id="topmenucontainer">
+<ul id="topmenu">
+<li class="active"><a class="tabactive" href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;pos=0&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_browse.png" width="16" height="16" alt="">Browse</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_structure.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_props.png" width="16" height="16" alt="">Structure</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_sql.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_sql.png" width="16" height="16" alt="">SQL</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_select.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_search.png" width="16" height="16" alt="">Search</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_change.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_insrow.png" width="16" height="16" alt="">Insert</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_export.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;single_table=true&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_tblexport.png" width="16" height="16" alt="">Export</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_import.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_tblimport.png" width="16" height="16" alt="">Import</a></li>
+<li><a class="tab" href="http://localhost/phpmyadmin/tbl_operations.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img class="icon" src="./b_tblops.png" width="16" height="16" alt="">Operations</a></li>
+<li><a class="tabcaution" href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;reload=1&amp;sql_query=TRUNCATE+TABLE+%60volunteer%60&amp;zero_rows=Table+volunteer+has+been+emptied&amp;goto=tbl_structure.php&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;TRUNCATE TABLE `volunteer`&#39;)"><img class="icon" src="./b_empty.png" width="16" height="16" alt="">Empty</a></li>
+<li><a class="tabcaution" href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;reload=1&amp;purge=1&amp;sql_query=DROP+TABLE+%60volunteer%60&amp;goto=db_structure.php&amp;zero_rows=Table+volunteer+has+been+dropped&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;DROP TABLE `volunteer`&#39;)"><img class="icon" src="./b_deltbl.png" width="16" height="16" alt="">Drop</a></li>
+</ul>
+<div class="clearfloat"></div></div>
+
+<script type="text/javascript">
+//<![CDATA[
+if (window.parent.updateTableTitle) window.parent.updateTableTitle('event.volunteer', ' (5)');
+//]]>
+</script>
+<div align="left">
+<div class="success">Showing rows 0 - 4 (5 total, Query took 0.0003 sec)</div><code class="sql"><span class="syntax"><span class="syntax_alpha syntax_alpha_reservedWord">SELECT</span>  <span class="syntax_punct">*</span> <br><span class="syntax_alpha syntax_alpha_reservedWord">FROM</span>  <span class="syntax_quote syntax_quote_backtick">`volunteer`</span> <span class="syntax_white syntax_white_newline"></span><br><span class="syntax_alpha syntax_alpha_reservedWord">LIMIT</span> <span class="syntax_digit syntax_digit_integer">0</span> <span class="syntax_punct syntax_punct_listsep">,</span> <span class="syntax_digit syntax_digit_integer">30</span></span></code><div class="tools"><form action="http://localhost/phpmyadmin/sql.php" method="post"><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia">
+<input type="hidden" name="db" value="event"><input type="hidden" name="table" value="volunteer"><input type="hidden" name="token" value="b515f4e9d07645c02fe678cf2c543d4a"><input type="hidden" name="sql_query" value="SELECT * FROM `volunteer`">
+<input type="hidden" name="profiling_form" value="1">
+<input type="checkbox" name="profiling" id="profiling" onclick="this.form.submit();"><label for="profiling">Profiling</label><noscript><input type="submit" value="Go" /></noscript>
+</form>
+ [
+<a href="http://localhost/phpmyadmin/tbl_sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;show_query=1&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia#querybox" onclick="window.parent.focus_querywindow(&#39;SELECT * FROM `volunteer`&#39;); return false;">Edit</a>
+] [
+<a href="http://localhost/phpmyadmin/import.php?db=event&amp;table=volunteer&amp;sql_query=EXPLAIN+SELECT+%2A+FROM+%60volunteer%60&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia">Explain SQL</a>
+] [
+<a href="http://localhost/phpmyadmin/import.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;show_query=1&amp;show_as_php=1&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia">Create PHP Code</a>
+] [
+<a href="http://localhost/phpmyadmin/import.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;show_query=1&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia">Refresh</a>
+]</div></div><br>
+
+<!-- Navigation bar -->
+<table border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+    <td>
+    &nbsp;&nbsp;&nbsp;
+</td>
+<td align="center">
+    <form action="http://localhost/phpmyadmin/sql.php" method="post" onsubmit="return (checkFormElementInRange(this, &#39;session_max_rows&#39;, &#39;%d is not valid row number.&#39;, 1) &amp;&amp; checkFormElementInRange(this, &#39;pos&#39;, &#39;%d is not valid row number.&#39;, 0-1))"><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia">
+        <input type="hidden" name="db" value="event"><input type="hidden" name="table" value="volunteer"><input type="hidden" name="token" value="b515f4e9d07645c02fe678cf2c543d4a">        <input type="hidden" name="sql_query" value="SELECT * FROM `volunteer`">
+        <input type="hidden" name="goto" value="tbl_structure.php">
+        <input type="submit" name="navig" value="Show :">
+        <input type="text" name="session_max_rows" size="3" value="30" class="textfield" onfocus="this.select()">
+        row(s) starting from record #
+        <input type="text" name="pos" size="6" value="0" class="textfield" onfocus="this.select()">
+        <br>
+        in 
+            <select name="disp_direction">
+                <option value="horizontal" selected="selected">horizontal</option>
+                <option value="horizontalflipped">horizontal (rotated headers)</option>
+                <option value="vertical">vertical</option>
+            </select>
+            mode and repeat headers after 
+            <input type="text" size="3" name="repeat_cells" value="100" class="textfield">
+            cells
+    </form>
+</td>
+<td>
+    &nbsp;&nbsp;&nbsp;
+</td>
+    
+</tr>
+</tbody></table>
+
+    
+<form method="post" action="http://localhost/phpmyadmin/sql.php" name="displayOptionsForm" id="displayOptionsForm"><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia"><input type="hidden" name="db" value="event"><input type="hidden" name="table" value="volunteer"><input type="hidden" name="sql_query" value="SELECT * FROM `volunteer`"><input type="hidden" name="goto" value="tbl_structure.php"><input type="hidden" name="display_options_form" value="1"><input type="hidden" name="token" value="b515f4e9d07645c02fe678cf2c543d4a"><br><script type="text/javascript">
+// <![CDATA[
+window.addEvent('domready', function(){
+    var status = {
+        'true': '- ',
+        'false': '+ '
+    };
+
+    var anchordisplayoptions = new Element('a', {
+        'id': 'toggle_displayoptions',
+        'href': '#',
+        'events': {
+            'click': function(){
+                mySlidedisplayoptions.toggle();
+            }
+        }
+    });
+
+    anchordisplayoptions.appendText('Options');
+    anchordisplayoptions.injectBefore('displayoptions');
+
+    var slider_statusdisplayoptions = new Element('span', {
+        'id': 'slider_status_displayoptions'
+    });
+    slider_statusdisplayoptions.appendText('+ ');
+    slider_statusdisplayoptions.injectBefore('toggle_displayoptions');
+
+    var mySlidedisplayoptions = new Fx.Slide('displayoptions');
+        mySlidedisplayoptions.hide();
+            mySlidedisplayoptions.addEvent('complete', function() {
+                $('slider_status_displayoptions').set('html', status[mySlidedisplayoptions.open]);
+                    });
+
+    $('displayoptions').style.display="block";
+});
+    document.write('<div id="displayoptions"  style="display: none;">');
+    //]]>
+    </script><span id="slider_status_displayoptions">+ </span><a id="toggle_displayoptions" href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;zero_rows=The+row+has+been+deleted&amp;goto=tbl_structure.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;message=1+row%28s%29+deleted.+%28+Query+took+0.0269+sec+%29&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia#">Options</a><div style="margin: 0px; position: static; overflow: hidden; height: 0px;"><div id="displayoptions" style="display: block; margin: 0px;">
+    <noscript>
+    <div id="displayoptions">
+    </noscript>
+    <fieldset><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia"><div class="formelement"><input type="radio" name="display_text" id="display_text_P" value="P" checked="checked">
+<label for="display_text_P">Partial Texts</label><br>
+<input type="radio" name="display_text" id="display_text_F" value="F">
+<label for="display_text_F">Full Texts</label><br>
+</div><div class="formelement"><input type="checkbox" name="display_binary" id="display_binary" checked="checked"><label for="display_binary">Show BINARY</label><br><input type="checkbox" name="display_blob" id="display_blob"><label for="display_blob">Show BLOB</label></div><div class="formelement"><input type="checkbox" name="hide_transformation" id="hide_transformation"><label for="hide_transformation">Hide Browser transformation</label></div><div class="clearfloat"></div></fieldset><fieldset class="tblFooters"><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia"><input type="submit" value="Go"></fieldset></div></div></form><form method="post" action="http://localhost/phpmyadmin/tbl_row_action.php" name="rowsDeleteForm" id="rowsDeleteForm"><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia">
+<input type="hidden" name="db" value="event"><input type="hidden" name="table" value="volunteer"><input type="hidden" name="token" value="b515f4e9d07645c02fe678cf2c543d4a"><input type="hidden" name="goto" value="sql.php">
+<table id="table_results" class="data">
+<thead><tr>
+    <th colspan="3"></th>
+            <th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60usn%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">usn</a>
+</th><th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60name%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">name</a>
+</th><th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60college%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">college</a>
+</th><th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60dept%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">dept</a>
+</th><th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60vol_exp%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">vol_exp</a>
+</th><th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60age%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">age</a>
+</th><th>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60+ORDER+BY+%60volunteer%60.%60sem%60+ASC&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" title="Sort">sem</a>
+</th></tr>
+</thead>
+        <tbody>
+    <tr class="odd">
+    <td align="center">
+        <input type="checkbox" id="id_rows_to_delete0" name="rows_to_delete[ `volunteer`.`usn` = &#39;2ke15is061&#39; AND `volunteer`.`name` = &#39;C-sharp   PROGRAMMING&#39; AND `volunteer`.`college` = &#39;jksdlkf&#39; AND `volunteer`.`dept` = &#39;ise&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 55 AND `volunteer`.`sem` = 6]" onclick="copyCheckboxesRange(&#39;rowsDeleteForm&#39;, &#39;id_rows_to_delete0&#39;,&#39;l&#39;);" value="DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = &#39;2ke15is061&#39; AND `volunteer`.`name` = &#39;C-sharp   PROGRAMMING&#39; AND `volunteer`.`college` = &#39;jksdlkf&#39; AND `volunteer`.`dept` = &#39;ise&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 55 AND `volunteer`.`sem` = 6 LIMIT 1">
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/tbl_change.php?db=event&amp;table=volunteer&amp;primary_key=+%60volunteer%60.%60usn%60+%3D+%272ke15is061%27+AND+%60volunteer%60.%60name%60+%3D+%27C-sharp+++PROGRAMMING%27+AND+%60volunteer%60.%60college%60+%3D+%27jksdlkf%27+AND+%60volunteer%60.%60dept%60+%3D+%27ise%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+55+AND+%60volunteer%60.%60sem%60+%3D+6&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=sql.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_edit.png" title="Edit" alt="Edit" class="icon" width="16" height="16"></a>
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=DELETE+FROM+%60event%60.%60volunteer%60+WHERE+%60volunteer%60.%60usn%60+%3D+%272ke15is061%27+AND+%60volunteer%60.%60name%60+%3D+%27C-sharp+++PROGRAMMING%27+AND+%60volunteer%60.%60college%60+%3D+%27jksdlkf%27+AND+%60volunteer%60.%60dept%60+%3D+%27ise%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+55+AND+%60volunteer%60.%60sem%60+%3D+6+LIMIT+1&amp;zero_rows=The+row+has+been+deleted&amp;goto=sql.php%3Fdb%3Devent%26table%3Dvolunteer%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560volunteer%2560%26zero_rows%3DThe%2Brow%2Bhas%2Bbeen%2Bdeleted%26goto%3Dtbl_structure.php%26token%3Db515f4e9d07645c02fe678cf2c543d4a&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = \&#39;2ke15is061\&#39; AND `volunteer`.`name` = \&#39;C-sharp   PROGRAMMING\&#39; AND `volunteer`.`college` = \&#39;jksdlkf\&#39; AND `volunteer`.`dept` = \&#39;ise\&#39; AND `volunteer`.`vol_exp` = \&#39;vol_exp\&#39; AND `volunteer`.`age` = 55 AND `volunteer`.`sem` = 6 LIMIT 1&#39;)"><img src="./b_drop.png" title="Delete" alt="Delete" class="icon" width="16" height="16"></a>
+    </td>
+<td class="">2ke15is061</td>
+<td class="">C-sharp &nbsp; PROGRAMMING</td>
+<td class="">jksdlkf</td>
+<td class="">ise</td>
+<td class="">vol_exp</td>
+<td align="right" class=" nowrap">55</td>
+<td align="right" class=" nowrap">6</td>
+</tr>
+            
+    <tr class="even">
+    <td align="center">
+        <input type="checkbox" id="id_rows_to_delete1" name="rows_to_delete[ `volunteer`.`usn` = &#39;2ke15cs015&#39; AND `volunteer`.`name` = &#39;ga&#39; AND `volunteer`.`college` = &#39;kleit&#39; AND `volunteer`.`dept` = &#39;cse&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 15 AND `volunteer`.`sem` = 7]" onclick="copyCheckboxesRange(&#39;rowsDeleteForm&#39;, &#39;id_rows_to_delete1&#39;,&#39;l&#39;);" value="DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = &#39;2ke15cs015&#39; AND `volunteer`.`name` = &#39;ga&#39; AND `volunteer`.`college` = &#39;kleit&#39; AND `volunteer`.`dept` = &#39;cse&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 15 AND `volunteer`.`sem` = 7 LIMIT 1">
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/tbl_change.php?db=event&amp;table=volunteer&amp;primary_key=+%60volunteer%60.%60usn%60+%3D+%272ke15cs015%27+AND+%60volunteer%60.%60name%60+%3D+%27ga%27+AND+%60volunteer%60.%60college%60+%3D+%27kleit%27+AND+%60volunteer%60.%60dept%60+%3D+%27cse%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+15+AND+%60volunteer%60.%60sem%60+%3D+7&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=sql.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_edit.png" title="Edit" alt="Edit" class="icon" width="16" height="16"></a>
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=DELETE+FROM+%60event%60.%60volunteer%60+WHERE+%60volunteer%60.%60usn%60+%3D+%272ke15cs015%27+AND+%60volunteer%60.%60name%60+%3D+%27ga%27+AND+%60volunteer%60.%60college%60+%3D+%27kleit%27+AND+%60volunteer%60.%60dept%60+%3D+%27cse%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+15+AND+%60volunteer%60.%60sem%60+%3D+7+LIMIT+1&amp;zero_rows=The+row+has+been+deleted&amp;goto=sql.php%3Fdb%3Devent%26table%3Dvolunteer%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560volunteer%2560%26zero_rows%3DThe%2Brow%2Bhas%2Bbeen%2Bdeleted%26goto%3Dtbl_structure.php%26token%3Db515f4e9d07645c02fe678cf2c543d4a&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = \&#39;2ke15cs015\&#39; AND `volunteer`.`name` = \&#39;ga\&#39; AND `volunteer`.`college` = \&#39;kleit\&#39; AND `volunteer`.`dept` = \&#39;cse\&#39; AND `volunteer`.`vol_exp` = \&#39;vol_exp\&#39; AND `volunteer`.`age` = 15 AND `volunteer`.`sem` = 7 LIMIT 1&#39;)"><img src="./b_drop.png" title="Delete" alt="Delete" class="icon" width="16" height="16"></a>
+    </td>
+<td class="">2ke15cs015</td>
+<td class="">ga</td>
+<td class="">kleit</td>
+<td class="">cse</td>
+<td class="">vol_exp</td>
+<td align="right" class=" nowrap">15</td>
+<td align="right" class=" nowrap">7</td>
+</tr>
+            
+    <tr class="odd">
+    <td align="center">
+        <input type="checkbox" id="id_rows_to_delete2" name="rows_to_delete[ `volunteer`.`usn` = &#39;2ke15cs015&#39; AND `volunteer`.`name` = &#39;ganga&#39; AND `volunteer`.`college` = &#39;kleit&#39; AND `volunteer`.`dept` = &#39;cse&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 21 AND `volunteer`.`sem` = 7]" onclick="copyCheckboxesRange(&#39;rowsDeleteForm&#39;, &#39;id_rows_to_delete2&#39;,&#39;l&#39;);" value="DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = &#39;2ke15cs015&#39; AND `volunteer`.`name` = &#39;ganga&#39; AND `volunteer`.`college` = &#39;kleit&#39; AND `volunteer`.`dept` = &#39;cse&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 21 AND `volunteer`.`sem` = 7 LIMIT 1">
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/tbl_change.php?db=event&amp;table=volunteer&amp;primary_key=+%60volunteer%60.%60usn%60+%3D+%272ke15cs015%27+AND+%60volunteer%60.%60name%60+%3D+%27ganga%27+AND+%60volunteer%60.%60college%60+%3D+%27kleit%27+AND+%60volunteer%60.%60dept%60+%3D+%27cse%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+21+AND+%60volunteer%60.%60sem%60+%3D+7&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=sql.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_edit.png" title="Edit" alt="Edit" class="icon" width="16" height="16"></a>
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=DELETE+FROM+%60event%60.%60volunteer%60+WHERE+%60volunteer%60.%60usn%60+%3D+%272ke15cs015%27+AND+%60volunteer%60.%60name%60+%3D+%27ganga%27+AND+%60volunteer%60.%60college%60+%3D+%27kleit%27+AND+%60volunteer%60.%60dept%60+%3D+%27cse%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+21+AND+%60volunteer%60.%60sem%60+%3D+7+LIMIT+1&amp;zero_rows=The+row+has+been+deleted&amp;goto=sql.php%3Fdb%3Devent%26table%3Dvolunteer%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560volunteer%2560%26zero_rows%3DThe%2Brow%2Bhas%2Bbeen%2Bdeleted%26goto%3Dtbl_structure.php%26token%3Db515f4e9d07645c02fe678cf2c543d4a&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = \&#39;2ke15cs015\&#39; AND `volunteer`.`name` = \&#39;ganga\&#39; AND `volunteer`.`college` = \&#39;kleit\&#39; AND `volunteer`.`dept` = \&#39;cse\&#39; AND `volunteer`.`vol_exp` = \&#39;vol_exp\&#39; AND `volunteer`.`age` = 21 AND `volunteer`.`sem` = 7 LIMIT 1&#39;)"><img src="./b_drop.png" title="Delete" alt="Delete" class="icon" width="16" height="16"></a>
+    </td>
+<td class="">2ke15cs015</td>
+<td class="">ganga</td>
+<td class="">kleit</td>
+<td class="">cse</td>
+<td class="">vol_exp</td>
+<td align="right" class=" nowrap">21</td>
+<td align="right" class=" nowrap">7</td>
+</tr>
+            
+    <tr class="even">
+    <td align="center">
+        <input type="checkbox" id="id_rows_to_delete3" name="rows_to_delete[ `volunteer`.`usn` = &#39;1455&#39; AND `volunteer`.`name` = &#39;khfghkd&#39; AND `volunteer`.`college` = &#39;iodrh&#39; AND `volunteer`.`dept` = &#39;srtrt&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 45 AND `volunteer`.`sem` = 5]" onclick="copyCheckboxesRange(&#39;rowsDeleteForm&#39;, &#39;id_rows_to_delete3&#39;,&#39;l&#39;);" value="DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = &#39;1455&#39; AND `volunteer`.`name` = &#39;khfghkd&#39; AND `volunteer`.`college` = &#39;iodrh&#39; AND `volunteer`.`dept` = &#39;srtrt&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 45 AND `volunteer`.`sem` = 5 LIMIT 1">
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/tbl_change.php?db=event&amp;table=volunteer&amp;primary_key=+%60volunteer%60.%60usn%60+%3D+%271455%27+AND+%60volunteer%60.%60name%60+%3D+%27khfghkd%27+AND+%60volunteer%60.%60college%60+%3D+%27iodrh%27+AND+%60volunteer%60.%60dept%60+%3D+%27srtrt%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+45+AND+%60volunteer%60.%60sem%60+%3D+5&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=sql.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_edit.png" title="Edit" alt="Edit" class="icon" width="16" height="16"></a>
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=DELETE+FROM+%60event%60.%60volunteer%60+WHERE+%60volunteer%60.%60usn%60+%3D+%271455%27+AND+%60volunteer%60.%60name%60+%3D+%27khfghkd%27+AND+%60volunteer%60.%60college%60+%3D+%27iodrh%27+AND+%60volunteer%60.%60dept%60+%3D+%27srtrt%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+45+AND+%60volunteer%60.%60sem%60+%3D+5+LIMIT+1&amp;zero_rows=The+row+has+been+deleted&amp;goto=sql.php%3Fdb%3Devent%26table%3Dvolunteer%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560volunteer%2560%26zero_rows%3DThe%2Brow%2Bhas%2Bbeen%2Bdeleted%26goto%3Dtbl_structure.php%26token%3Db515f4e9d07645c02fe678cf2c543d4a&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = \&#39;1455\&#39; AND `volunteer`.`name` = \&#39;khfghkd\&#39; AND `volunteer`.`college` = \&#39;iodrh\&#39; AND `volunteer`.`dept` = \&#39;srtrt\&#39; AND `volunteer`.`vol_exp` = \&#39;vol_exp\&#39; AND `volunteer`.`age` = 45 AND `volunteer`.`sem` = 5 LIMIT 1&#39;)"><img src="./b_drop.png" title="Delete" alt="Delete" class="icon" width="16" height="16"></a>
+    </td>
+<td class="">1455</td>
+<td class="">khfghkd</td>
+<td class="">iodrh</td>
+<td class="">srtrt</td>
+<td class="">vol_exp</td>
+<td align="right" class=" nowrap">45</td>
+<td align="right" class=" nowrap">5</td>
+</tr>
+            
+    <tr class="odd">
+    <td align="center">
+        <input type="checkbox" id="id_rows_to_delete4" name="rows_to_delete[ `volunteer`.`usn` = &#39;2ke15cs015&#39; AND `volunteer`.`name` = &#39;ganga&#39; AND `volunteer`.`college` = &#39;kleit&#39; AND `volunteer`.`dept` = &#39;cse&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 21 AND `volunteer`.`sem` = 7]" onclick="copyCheckboxesRange(&#39;rowsDeleteForm&#39;, &#39;id_rows_to_delete4&#39;,&#39;l&#39;);" value="DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = &#39;2ke15cs015&#39; AND `volunteer`.`name` = &#39;ganga&#39; AND `volunteer`.`college` = &#39;kleit&#39; AND `volunteer`.`dept` = &#39;cse&#39; AND `volunteer`.`vol_exp` = &#39;vol_exp&#39; AND `volunteer`.`age` = 21 AND `volunteer`.`sem` = 7 LIMIT 1">
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/tbl_change.php?db=event&amp;table=volunteer&amp;primary_key=+%60volunteer%60.%60usn%60+%3D+%272ke15cs015%27+AND+%60volunteer%60.%60name%60+%3D+%27ganga%27+AND+%60volunteer%60.%60college%60+%3D+%27kleit%27+AND+%60volunteer%60.%60dept%60+%3D+%27cse%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+21+AND+%60volunteer%60.%60sem%60+%3D+7&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=sql.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_edit.png" title="Edit" alt="Edit" class="icon" width="16" height="16"></a>
+    </td>
+    <td align="center">
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=DELETE+FROM+%60event%60.%60volunteer%60+WHERE+%60volunteer%60.%60usn%60+%3D+%272ke15cs015%27+AND+%60volunteer%60.%60name%60+%3D+%27ganga%27+AND+%60volunteer%60.%60college%60+%3D+%27kleit%27+AND+%60volunteer%60.%60dept%60+%3D+%27cse%27+AND+%60volunteer%60.%60vol_exp%60+%3D+%27vol_exp%27+AND+%60volunteer%60.%60age%60+%3D+21+AND+%60volunteer%60.%60sem%60+%3D+7+LIMIT+1&amp;zero_rows=The+row+has+been+deleted&amp;goto=sql.php%3Fdb%3Devent%26table%3Dvolunteer%26sql_query%3DSELECT%2B%252A%2BFROM%2B%2560volunteer%2560%26zero_rows%3DThe%2Brow%2Bhas%2Bbeen%2Bdeleted%26goto%3Dtbl_structure.php%26token%3Db515f4e9d07645c02fe678cf2c543d4a&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="return confirmLink(this, &#39;DELETE FROM `event`.`volunteer` WHERE `volunteer`.`usn` = \&#39;2ke15cs015\&#39; AND `volunteer`.`name` = \&#39;ganga\&#39; AND `volunteer`.`college` = \&#39;kleit\&#39; AND `volunteer`.`dept` = \&#39;cse\&#39; AND `volunteer`.`vol_exp` = \&#39;vol_exp\&#39; AND `volunteer`.`age` = 21 AND `volunteer`.`sem` = 7 LIMIT 1&#39;)"><img src="./b_drop.png" title="Delete" alt="Delete" class="icon" width="16" height="16"></a>
+    </td>
+<td class="">2ke15cs015</td>
+<td class="">ganga</td>
+<td class="">kleit</td>
+<td class="">cse</td>
+<td class="">vol_exp</td>
+<td align="right" class=" nowrap">21</td>
+<td align="right" class=" nowrap">7</td>
+</tr>
+            
+</tbody>
+</table>
+
+    <img class="selectallarrow" width="38" height="22" src="./arrow_ltr.png" alt="With selected:">
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=tbl_structure.php&amp;checkall=1&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="if (markAllRows(&#39;rowsDeleteForm&#39;)) return false;">Check All</a>
+
+ / 
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;goto=tbl_structure.php&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" onclick="if (unMarkAllRows(&#39;rowsDeleteForm&#39;)) return false;">Uncheck All</a>
+
+<i>With selected:</i>
+<button class="mult_submit" type="submit" name="submit_mult" value="Change" title="Change">
+<img src="./b_edit.png" title="Change" alt="Change" class="icon" width="16" height="16"></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="Delete" title="Delete">
+<img src="./b_drop.png" title="Delete" alt="Delete" class="icon" width="16" height="16"></button>
+<button class="mult_submit" type="submit" name="submit_mult" value="Export" title="Export">
+<img src="./b_tblexport.png" title="Export" alt="Export" class="icon" width="16" height="16"></button>
+
+<input type="hidden" name="sql_query" value="SELECT * FROM `volunteer`">
+<input type="hidden" name="url_query" value="db=event&amp;table=volunteer&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;goto=tbl_sql.php&amp;back=tbl_sql.php">
+</form>
+<br>
+
+<!-- Navigation bar -->
+<table border="0" cellpadding="2" cellspacing="0">
+<tbody><tr>
+    <td>
+    &nbsp;&nbsp;&nbsp;
+</td>
+<td align="center">
+    <form action="http://localhost/phpmyadmin/sql.php" method="post" onsubmit="return (checkFormElementInRange(this, &#39;session_max_rows&#39;, &#39;%d is not valid row number.&#39;, 1) &amp;&amp; checkFormElementInRange(this, &#39;pos&#39;, &#39;%d is not valid row number.&#39;, 0-1))"><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia">
+        <input type="hidden" name="db" value="event"><input type="hidden" name="table" value="volunteer"><input type="hidden" name="token" value="b515f4e9d07645c02fe678cf2c543d4a">        <input type="hidden" name="sql_query" value="SELECT * FROM `volunteer`">
+        <input type="hidden" name="goto" value="tbl_structure.php">
+        <input type="submit" name="navig" value="Show :">
+        <input type="text" name="session_max_rows" size="3" value="30" class="textfield" onfocus="this.select()">
+        row(s) starting from record #
+        <input type="text" name="pos" size="6" value="0" class="textfield" onfocus="this.select()">
+        <br>
+        in 
+            <select name="disp_direction">
+                <option value="horizontal" selected="selected">horizontal</option>
+                <option value="horizontalflipped">horizontal (rotated headers)</option>
+                <option value="vertical">vertical</option>
+            </select>
+            mode and repeat headers after 
+            <input type="text" size="3" name="repeat_cells" value="100" class="textfield">
+            cells
+    </form>
+</td>
+<td>
+    &nbsp;&nbsp;&nbsp;
+</td>
+    
+</tr>
+</tbody></table>
+
+    <fieldset><input type="hidden" name="phpMyAdmin" value="o8fn6330g8dgekii5lp85irrudrn1pia"><legend>Query results operations</legend>
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" target="print_view"><img src="./b_print.png" title="Print view" alt="Print view" class="icon" width="16" height="16"> Print view</a>
+
+
+<a href="http://localhost/phpmyadmin/sql.php?db=event&amp;table=volunteer&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;display_text=F&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia" target="print_view"><img src="./b_print.png" title="Print view (with full texts)" alt="Print view (with full texts)" class="icon" width="16" height="16"> Print view (with full texts)</a>
+
+
+<a href="http://localhost/phpmyadmin/tbl_export.php?db=event&amp;table=volunteer&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;single_table=true&amp;unlim_num_rows=5&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_tblexport.png" title="Export" alt="Export" class="icon" width="16" height="16"> Export</a>
+
+
+<a href="http://localhost/phpmyadmin/view_create.php?db=event&amp;table=volunteer&amp;printview=1&amp;sql_query=SELECT+%2A+FROM+%60volunteer%60&amp;token=b515f4e9d07645c02fe678cf2c543d4a&amp;phpMyAdmin=o8fn6330g8dgekii5lp85irrudrn1pia"><img src="./b_views.png" title="CREATE VIEW" alt="CREATE VIEW" class="icon" width="16" height="16"> CREATE VIEW</a>
+
+</fieldset><br><script type="text/javascript">
+//<![CDATA[
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('en-utf-8', 'utf8_general_ci', '1', 'event', 'volunteer', 'b515f4e9d07645c02fe678cf2c543d4a');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        'event',
+        'volunteer',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+//]]>
+</script>
+
+
+</body></html>

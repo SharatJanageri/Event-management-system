@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link href="css/menu.css" rel="stylesheet" type="text/css">
+		<link href="css/form.css" rel="stylesheet" type="text/css">
+
+	<title>
+		WINNERS OF CULTURE EVENTS. !
+	</title>
+
+<script>
+function myfun() 
+  {
+        
+    var usn=document.getElementById("usn").value;
+    var name=document.getElementById("name").value;
+    var college=document.getElementById("college").value;
+    var place= document.getElementById("place").value;
+    var prize= document.getElementById("prize").value;
+     var eve= document.getElementById("eve").value;
+    
+    
+    
+  
+
+  var count=0;
+  
+
+  
+  
+</script>
+
+
+<style type="text/css">
+	body
+	{
+		background-image:url("");
+		background-repeat: no-repeat;
+		background-size: 180%;
+	}
+	
+	h1,h3
+  {
+     color: #000000;
+  }
+</style>
+
+</head>
+
+<body>
+
+
+<!-- Menu Bar-->
+<center>
+
+  <div class="dropdown">
+  <a href="admindata.php">
+  <button class="dropbtn">BACK</button></a>
+</div>
+
+
+<div class="dropdown">
+  <a href="manage.html">
+  <button class="dropbtn">LOGOUT</button></a>
+</div>
+</center>
+</div>  
+
+<!--End of Menu-->
+
+
+
+<!-- Statring of Form -->
+<center>
+<form id="regForm" action="reg_win_cul.php" method="post" onSubmit="return myfun(this);">
+
+  <h1>Registration For Cultural Events!!</h1>
+  
+  <div class="labels">
+  <h3>USN:
+    <p><input placeholder="USN..." id="usn" name="usn" required></p>
+      Your Name:
+    <p><input placeholder="Name..." name="name" required></p>
+    College: 
+     <p><input placeholder="College...." id="college" name="college" required></p>
+	  Place won:
+    <p><input placeholder="Place.."  name="dept" required></p>
+    Cash Prize:
+    <p><input placeholder="Prize..."  name="age" required></p>
+    
+    <p>Select The Cultural Event <select name='eve'>
+      <option value ="Select option" required />SELECT CULTURE EVENT </option>
+     <option value='Singing' name='singing'>SINGING</option>
+     <option value='Dancing' name='dancing'>DANCING </option>
+     <option value='fashion' name='fashion'>FASHION SHOW</option>
+    </select>
+</p>
+<h2>
+
+ 
+</h2>
+ </h3>
+	<center>
+    <div style="float:center;">
+	<button type="submit" id="submit" value="submit" onclick="submit">Submit</button>
+	</a>
+	</center>
+	<p>
+	<center>
+	<div style="float:absolute">
+	
+	<a href="admindata.php"><button type="button" id="cancel" onclick="return">Cancel</button></a>
+	</center>
+	</p>
+    
+</form>
+</center>
+
+
+
+</body>
+</html>
